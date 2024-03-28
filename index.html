@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Student Housing</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*     <link rel="stylesheet" href="~/StudentHousing.styles.css" asp-append-version="true" />  *@
+
+      <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+@*  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+ *@
+
+</head>
+<body>
+
+    <header class="bg-purple-900 py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <a href="@Url.Action("Index", "Home")" class="text-white font-bold text-xl">
+
+                   @*  <div class="bg-indigo-300"> *@
+                        <img class="object-cover h-10 w-40" src="~/images/logo.jpg" alt="Image Description" />
+           @*          </div> *@
+
+                    
+                    
+                </a>
+                <nav>
+                    <a href="#" class="text-white pr-6">Steps to Book Your Residence</a>
+                    <a href="#" class="text-white pr-6">Help</a>
+                    <a href="#" class="text-white pr-6"> Be Our Partner</a>
+                    <a href="#" class="text-white">My Account</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="relative">
+
+
+            @RenderBody()
+        </div>
+
+    <footer class="bg-purple-900 py-4 mt-10">
+        <div class="max-w-full mx-auto px-4 text-white">
+            <div class="flex justify-between">
+                <p >
+
+                    <div>
+
+                        <div class="text-white font-bold text-xl">Contacts:</div>
+                        <div class="text-white pr-6">
+                            Email: contact@studliving.com
+                        </div>
+@*                         <div class="text-white pr-6">
+                            Faacebook  Instagram LinkedIn
+                        </div> *@
+        
+                    </div>
+
+       
+                </p>
+
+                <p>
+                    <div>
+                        <div class="text-white font-bold text-xl">Working with us:</div>
+                        <div>
+                            <div>
+                                Are you a landlord looking to rent to a student?<br />
+                                @* Are you from a educational institution looking for portal of student residences? <br /> *@
+                                If yes, we can help you. Please contact us by email or click here to contact us.
+                            </div>
+                        </div>
+
+                    </div>
+                </p>
+
+                <p>
+                <div>
+                    <a href="#" class="pr-4">What We Do</a> <br/>
+                    <a href="#" class="pr-4">Cookie Policy</a> <br/>
+                    <a href="#" class="pr-4">Disclaimer</a>
+                    
+                </div>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
 
